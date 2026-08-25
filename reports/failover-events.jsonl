@@ -1,0 +1,17 @@
+{"ts": 1787649046.090014, "iso": "2026-08-25T09:10:46.090018+00:00", "step": "1_verify_target", "target": "b", "target_state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787649046.091542, "iso": "2026-08-25T09:10:46.091544+00:00", "step": "2_restore_snapshot", "target": "b", "rpo_seconds": null, "docs_lost": null, "embed_model_version": "test", "meta": {"snapshot_at": 1787649046.090235, "latest_doc_ts": 1787649046.090235, "embed_model_version": "test"}}
+{"ts": 1787649046.09241, "iso": "2026-08-25T09:10:46.092411+00:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1787649047.106712, "iso": "2026-08-25T09:10:47.106716+00:00", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.01, "error": "timeout"}
+{"ts": 1787649132.907107, "iso": "2026-08-25T09:12:12.907108+00:00", "step": "1_verify_target", "target": "b", "target_state": {"region": "b", "pool_state": "full", "weights": false, "count": 0, "latest_doc_ts": null, "ts": 1787649132.906715}}
+{"ts": 1787649132.909476, "iso": "2026-08-25T09:12:12.909476+00:00", "step": "2_restore_snapshot", "target": "b", "rpo_seconds": 4.01, "docs_lost": 2, "embed_model_version": "embed-model=vi-e5-base@v3", "meta": {"snapshot_at": 1787649130.5344799, "source_region": "a", "latest_doc_ts": 1787649128.571603, "embed_model_version": "embed-model=vi-e5-base@v3", "restored_at": 1787649132.908905}}
+{"ts": 1787649132.909639, "iso": "2026-08-25T09:12:12.909639+00:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1787649132.923591, "iso": "2026-08-25T09:12:12.923592+00:00", "step": "4_wait_ready", "target": "b", "ok": true, "waited_s": 0.01}
+{"ts": 1787649132.923729, "iso": "2026-08-25T09:12:12.923729+00:00", "step": "5_dns_cutover", "target": "b", "active_region": "b", "ok": true}
+{"ts": 1787649281.242789, "iso": "2026-08-25T09:14:41.242791+00:00", "step": "1_verify_target", "target": "b", "target_state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787649281.244467, "iso": "2026-08-25T09:14:41.244468+00:00", "step": "2_restore_snapshot", "target": "b", "rpo_seconds": 76.13, "docs_lost": 38, "embed_model_version": "test", "meta": {"snapshot_at": 1787649281.243236, "latest_doc_ts": 1787649281.243236, "embed_model_version": "test"}}
+{"ts": 1787649281.244766, "iso": "2026-08-25T09:14:41.244767+00:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1787649282.262103, "iso": "2026-08-25T09:14:42.262110+00:00", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.02, "error": "timeout"}
+{"ts": 1787649499.319586, "iso": "2026-08-25T09:18:19.319588+00:00", "step": "1_verify_target", "target": "b", "target_state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787649499.321672, "iso": "2026-08-25T09:18:19.321673+00:00", "step": "2_restore_snapshot", "target": "b", "rpo_seconds": 76.13, "docs_lost": 38, "embed_model_version": "test", "meta": {"snapshot_at": 1787649499.3198552, "latest_doc_ts": 1787649499.3198552, "embed_model_version": "test"}}
+{"ts": 1787649499.3221278, "iso": "2026-08-25T09:18:19.322129+00:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1787649500.3369339, "iso": "2026-08-25T09:18:20.336955+00:00", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.01, "error": "timeout"}
